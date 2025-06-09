@@ -1,0 +1,88 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: white;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem 0;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.titleLink {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.titleLink:hover .title {
+  color: #666;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.navLink {
+  padding: 0.75rem 1.5rem;
+  color: #495057;
+  text-decoration: none;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.navLink:hover {
+  background-color: #f8f9fa;
+  color: #007bff;
+}
+
+.navLink.active {
+  background-color: #e9ecef;
+  color: #007bff;
+  border-right: 3px solid #007bff;
+}
+
+.main {
+  flex: 1;
+  padding: 2rem;
+}
+
+.welcome {
+  background-color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.welcome p {
+  margin: 0;
+  color: #495057;
+  font-size: 1.1rem;
+}
+
+.welcome p:first-child {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.25rem;
+  color: #000;
+}

@@ -1,0 +1,335 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.formContainer {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  border: 3px solid black;
+  border-radius: 8px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #000;
+}
+
+.section {
+  margin: 40px 0;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #000;
+}
+
+.inputGroup {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border: 3px solid black;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+  color: #000;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #666;
+  box-shadow: 0 0 0 2px rgba(102, 102, 102, 0.1);
+}
+
+.input::placeholder {
+  color: #999;
+}
+
+.textarea {
+  width: 100%;
+  padding: 12px;
+  border: 3px solid black;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: vertical;
+  min-height: 200px;
+  box-sizing: border-box;
+  color: #000;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: #666;
+  box-shadow: 0 0 0 2px rgba(102, 102, 102, 0.1);
+}
+
+.textarea::placeholder {
+  color: #999;
+}
+
+.fileInput {
+  width: 100%;
+  padding: 12px;
+  border: 3px solid black;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+}
+
+.fileInput::-webkit-file-upload-button {
+  background-color: #000;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 16px;
+}
+
+.fileInput::-webkit-file-upload-button:hover {
+  background-color: #666;
+}
+
+.imagePreview {
+  margin-top: 16px;
+  position: relative;
+  max-width: 100%;
+}
+
+.imagePreview img {
+  max-width: 100%;
+  max-height: 400px;
+  border-radius: 4px;
+  border: 3px solid black;
+}
+
+.detailImagePreviews {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.detailImagePreview {
+  position: relative;
+  border: 3px solid black;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.detailImagePreview img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.removeImage {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.removeImage:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.youtubePreview {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 560px;
+  aspect-ratio: 16/9;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.youtubePreview iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.teamMembers {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #000;
+  border-radius: 8px;
+  border-bottom: 1px solid #000;
+}
+
+.teamTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #000;
+}
+
+.teamList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.teamMemberInput {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.teamMemberName {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #000;
+}
+
+.teamMemberLink {
+  flex: 2;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #000;
+}
+
+.teamMemberName::placeholder,
+.teamMemberLink::placeholder {
+  color: #999;
+}
+
+.removeTeamMember {
+  padding: 8px 12px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.removeTeamMember:hover {
+  background-color: #ff3333;
+}
+
+.addTeamMember {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.addTeamMember:hover {
+  background-color: #45a049;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.submitButton,
+.cancelButton {
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  min-width: 100px;
+  border: none;
+  transition: all 0.2s;
+}
+
+.submitButton {
+  background-color: #000;
+  color: white;
+}
+
+.submitButton:hover {
+  background-color: #666;
+}
+
+.submitButton:disabled {
+  background-color: #666;
+  cursor: not-allowed;
+}
+
+.cancelButton {
+  background-color: #6c757d;
+  color: white;
+}
+
+.cancelButton:hover {
+  background-color: #5a6268;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 18px;
+  color: #666;
+}
+
+.error {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.2rem;
+  color: #000;
+}

@@ -1,0 +1,205 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff; /* 페이지 배경을 흰색으로 설정 */
+}
+
+/* 모든 박스를 검정색 테두리로 */
+.header,
+.navItem,
+.searchBox,
+.hallOfFame,
+.card {
+  border: 3px solid black;
+}
+
+.header {
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+  }
+
+  .header,
+  .navItem,
+  .searchBox,
+  .card {
+    border: 3px solid black;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+  }
+
+  .login {
+    margin-right: 10px;
+    padding: 8px 16px;
+    background-color: #050505;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .searchContainer {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    color: black;
+  }
+
+  .searchBox {
+    width: 50%;
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .card {
+    height: 400px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+    flex-direction: column;
+    padding: 20px;
+    transition: transform 0.2s;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .logoImage {
+    height: 65px;
+    width: auto;
+    display: block;
+  }
+
+  .authBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .email {
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.navItem {
+  width: 50px;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 4px;
+}
+
+.login {
+  margin-right: 10px;
+  padding: 8px 16px;
+  background-color: #050505;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* 검색 창 */
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  color: black;
+}
+
+.searchBox {
+  width: 50%;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* 명예의 전당 박스 */
+.hallOfFame {
+  width: 100%;
+  height: 400px; /* 게시물 3개 높이와 동일 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  background-color: #fff;
+  color: black;
+}
+
+/* 게시물 카드 3x3 */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  height: 400px; /* 기존보다 4배 증가 */
+  background-color: #fff; /* 배경을 흰색으로 */
+  text-align: center;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+.logoImage {
+  height: 70px; /* 2배로 증가 */
+  width: auto;
+  display: block;
+}
+
+.authBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.email {
+  font-size: 14px;
+  color: black;
+  background-color: white;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}

@@ -1,0 +1,355 @@
+.container {
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding: 2rem;
+}
+
+.profileSection {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.profileInfo {
+  text-align: center;
+}
+
+.userName {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.joinDate {
+  color: #666;
+  font-size: 1rem;
+}
+
+.contentSection {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #666;
+  background: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.tab:hover {
+  background-color: #f8f9fa;
+  color: #0984e3;
+}
+
+.tab.active {
+  background-color: #0984e3;
+  color: white;
+}
+
+.content {
+  min-height: 400px;
+}
+
+.postsGrid,
+.likedPostsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.postCard {
+  background-color: #ffffff;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  text-decoration: none;
+  padding: 0;
+  transition: transform 0.2s;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid black;
+  width: 100%;
+  height: 450px;
+}
+
+.postCard:hover {
+  transform: translateY(-5px);
+}
+
+.imageContainer {
+  width: 100%;
+  height: 250px;
+  border-radius: 4px 4px 0 0;
+  overflow: hidden;
+  border: none;
+  background-color: #f8f9fa;
+  position: relative;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  background-color: #f8f9fa;
+}
+
+.postCard:hover .imageContainer img {
+  transform: scale(1.05);
+}
+
+.postInfo {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  flex: 1;
+}
+
+.postTitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.postMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 15px;
+  color: #666;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+}
+
+.cardStats {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.likeButton,
+.viewCount {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #666;
+  font-size: 14px;
+}
+
+.likeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.likeButton:hover {
+  background-color: #fff5f5;
+  color: #ff4d4d;
+}
+
+.likeButton.liked {
+  color: #ff4d4d;
+}
+
+.heartIcon {
+  width: 20px;
+  height: 20px;
+  transition: all 0.2s ease;
+}
+
+.viewCount {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+}
+
+.viewCount svg {
+  width: 18px;
+  height: 18px;
+  color: #666;
+}
+
+.createdAt {
+  color: #999;
+  font-size: 13px;
+}
+
+.imagePlaceholder {
+  width: 100%;
+  height: 100%;
+  background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 1.2rem;
+}
+
+.commentsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.commentCard {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #e9ecef;
+  transition: transform 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+.commentCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.commentInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.commentContent {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid #0984e3;
+}
+
+.commentContent p {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.2rem;
+  color: #666;
+  background-color: #ffffff;
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.profileSection {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 32px auto;
+  padding: 32px 24px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.profileInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  padding: 0 48px;
+  min-width: 400px;
+  gap: 40px;
+}
+
+.userName {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 4px 0;
+  color: #222;
+  text-align: left;
+}
+
+.editProfileButton {
+  padding: 6px 18px;
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-left: 24px;
+  white-space: nowrap;
+}
+
+.editProfileButton:hover {
+  background: #1565c0;
+}
+
+.joinDate {
+  font-size: 1rem;
+  color: #888;
+  margin: 0;
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  .profileInfo {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 16px;
+    gap: 16px;
+  }
+}

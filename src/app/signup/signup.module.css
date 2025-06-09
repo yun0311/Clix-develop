@@ -1,0 +1,87 @@
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  color: #000;
+}
+
+.title {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.button {
+  padding: 12px;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.emailRow {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.verifyButton {
+  padding: 10px 15px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  height: 42px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.passwordWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.inputWithIcon {
+  width: 100%;
+  padding-right: 40px; /* 아이콘 공간 확보 */
+}
+
+.eyeIcon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #ccc;
+}

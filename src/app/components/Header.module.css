@@ -1,0 +1,205 @@
+.header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.headerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.logo:hover {
+  color: #0984e3;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.navItem {
+  color: #666;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.navItem:hover {
+  color: #0984e3;
+  background-color: #f8f9fa;
+}
+
+.navItem.active {
+  color: #0984e3;
+  background-color: #e3f2fd;
+}
+
+.authSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.userName {
+  font-size: 1rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.loginButton,
+.logoutButton {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.loginButton {
+  background-color: #0984e3;
+  color: white;
+  text-decoration: none;
+}
+
+.loginButton:hover {
+  background-color: #0873c4;
+}
+
+.logoutButton {
+  background-color: #f8f9fa;
+  color: #666;
+  border: 1px solid #ddd;
+}
+
+.logoutButton:hover {
+  background-color: #e9ecef;
+  color: #333;
+}
+
+.yearNavItem {
+  position: relative;
+  display: inline-block;
+}
+
+.yearDropdown {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  min-width: 120px;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.yearOption {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: none;
+  color: #333;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  text-align: left;
+  width: 100%;
+}
+
+.yearOption:hover {
+  background-color: #f0f0f0;
+  color: #0984e3;
+}
+
+.userMenu {
+  position: relative;
+  display: inline-block;
+}
+
+.userNameButton {
+  background-color: #f5f5f5;
+  border: none;
+  color: #666;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.userNameButton:hover {
+  background-color: #e0e0e0;
+  color: #0984e3;
+}
+
+.adminBadge {
+  background-color: #0984e3;
+  color: white;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+
+.userDropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  min-width: 180px;
+  z-index: 1000;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.userMenuItem {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.userMenuItem:hover {
+  background-color: #f5f6fa;
+  color: #0984e3;
+  padding-left: 1.25rem;
+}

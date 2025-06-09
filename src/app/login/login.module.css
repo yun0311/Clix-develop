@@ -1,0 +1,79 @@
+.container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 8px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input {
+  padding: 12px;
+  border: 2px solid black;
+  border-radius: 4px;
+  color: black;
+}
+
+.button {
+  padding: 12px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.links {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+  color: black;
+}
+
+.toggle {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.toggle button {
+  background: none;
+  border: none;
+  text-decoration: underline;
+  color: black;
+  cursor: pointer;
+}
+
+.emailRow {
+  display: flex;
+  gap: 10px;
+}
+
+.verifyButton {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}

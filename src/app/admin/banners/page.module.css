@@ -1,0 +1,172 @@
+.container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container h1 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.bannerSection {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.bannerSection h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #eee;
+}
+
+.uploadBox {
+  margin-bottom: 1.5rem;
+}
+
+.uploadBox input[type='file'] {
+  display: none;
+}
+
+.uploadButton {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #000;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.uploadButton:hover {
+  background-color: #333;
+}
+
+.uploadButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.bannerList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bannerItem {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+}
+
+.bannerItem img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.bannerInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bannerControls {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.controlButton {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.controlButton:hover:not(:disabled) {
+  background: #f5f5f5;
+}
+
+.controlButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.activeButton {
+  background: #4caf50;
+  color: white;
+  border-color: #4caf50;
+}
+
+.activeButton:hover {
+  background: #45a049;
+}
+
+.inactiveButton {
+  background: #f44336;
+  color: white;
+  border-color: #f44336;
+}
+
+.inactiveButton:hover {
+  background: #da190b;
+}
+
+.deleteButton {
+  padding: 0.5rem 1rem;
+  background: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.deleteButton:hover {
+  background: #da190b;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.yearSelector {
+  margin-bottom: 1.5rem;
+}
+
+.yearSelect {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  min-width: 120px;
+}
+
+.yearSelect:focus {
+  outline: none;
+  border-color: #000;
+}
